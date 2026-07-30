@@ -85,4 +85,15 @@ public ResponseEntity<PageResponse<EmployeeResponse>> getAllEmployees(
         return ResponseEntity.noContent().build();
     }
 
+    // new search methods
+    @GetMapping("/search")
+    public ResponseEntity<List<EmployeeResponse>> searchEmployeesByFirstName(
+            @RequestParam String firstName) {
+
+        List<EmployeeResponse> employees =
+                employeeService.searchEmployeesByFirstName(firstName);
+
+        return ResponseEntity.ok(employees);
+    }
+
 }

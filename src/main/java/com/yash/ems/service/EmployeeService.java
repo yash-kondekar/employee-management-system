@@ -29,4 +29,9 @@ public interface EmployeeService {
     EmployeeResponse updateEmployee(Long id,UpdateEmployeeRequest request);
 
     void deleteEmployee(Long id);
+
+
+    // new methods search
+    List<EmployeeResponse> searchEmployeesByFirstName(String firstName);
+
 }

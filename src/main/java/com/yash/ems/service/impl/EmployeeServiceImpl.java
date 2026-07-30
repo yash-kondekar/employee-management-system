@@ -133,4 +133,15 @@ public PageResponse<EmployeeResponse> getAllEmployees(
         employeeRepository.delete(employee);
     }
 
+    @Override
+    public List<EmployeeResponse> searchEmployeesByFirstName(String firstName) {
+
+        List<Employee> employees =
+                employeeRepository.findByFirstNameContainingIgnoreCase(firstName);
+
+        return employees.stream()
+                .map(employeeMapper::toResponse)
+                .toList();
+    }
+
 }
