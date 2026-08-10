@@ -134,10 +134,10 @@ public PageResponse<EmployeeResponse> getAllEmployees(
     }
 
     @Override
-    public List<EmployeeResponse> searchEmployeesByFirstName(String firstName) {
+    public List<EmployeeResponse> searchByKeyword(String keyword) {
 
         List<Employee> employees =
-                employeeRepository.findByFirstNameContainingIgnoreCase(firstName);
+                employeeRepository.searchByKeyword(keyword);
 
         return employees.stream()
                 .map(employeeMapper::toResponse)

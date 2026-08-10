@@ -87,11 +87,11 @@ public ResponseEntity<PageResponse<EmployeeResponse>> getAllEmployees(
 
     // new search methods
     @GetMapping("/search")
-    public ResponseEntity<List<EmployeeResponse>> searchEmployeesByFirstName(
-            @RequestParam String firstName) {
+    public ResponseEntity<List<EmployeeResponse>> searchEmployees(
+            @RequestParam String keyword) {
 
         List<EmployeeResponse> employees =
-                employeeService.searchEmployeesByFirstName(firstName);
+                employeeService.searchByKeyword(keyword);
 
         return ResponseEntity.ok(employees);
     }

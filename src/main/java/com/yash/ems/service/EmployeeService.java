@@ -32,6 +32,10 @@ public interface EmployeeService {
 
 
     // new methods search
-    List<EmployeeResponse> searchEmployeesByFirstName(String firstName);
+//    List<EmployeeResponse> searchEmployeesByFirstName(String firstName);
+
+    // using JPQL
+    List<EmployeeResponse> searchByKeyword(String keyword);
+
 
 }
