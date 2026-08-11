@@ -9,8 +9,10 @@ import com.yash.ems.exception.EmployeeNotFoundException;
 import com.yash.ems.mapper.EmployeeMapper;
 import com.yash.ems.repository.EmployeeRepository;
 import com.yash.ems.service.EmployeeService;
+import com.yash.ems.specification.EmployeeSpecification;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import org.springframework.data.domain.Page;
@@ -134,10 +136,16 @@ public PageResponse<EmployeeResponse> getAllEmployees(
     }
 
     @Override
-    public List<EmployeeResponse> searchByKeyword(String keyword) {
+    public List<EmployeeResponse> searchByKeyword(
+            String keyword,
+            String designation) {
+
+        Specification<Employee> specification =
+                Specification.where(EmployeeSpecification.hasKeyword(keyword))
+                        .and(EmployeeSpecification.hasDesignation(designation));
 
         List<Employee> employees =
-                employeeRepository.searchByKeyword(keyword);
+                employeeRepository.findAll(specification);
 
         return employees.stream()
                 .map(employeeMapper::toResponse)
