@@ -33,6 +33,7 @@ public class UpdateEmployeeRequest {
             regexp = "^[6-9]\\d{9}$",
             message = "Phone number must be a valid 10-digit Indian mobile number"
     )
+    private String phoneNumber;
 
     @NotBlank(message = "Designation is required")
     @Size(max = 100, message = "Designation cannot exceed 100 characters")

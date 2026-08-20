@@ -1,0 +1,221 @@
+2026-08-11 18:13:09 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-08-11 18:13:09 INFO  [main] c.y.e.EmployeeManagementSystemApplication - Starting EmployeeManagementSystemApplication using Java 21.0.11 with PID 30444 (C:\EMS\backend\target\classes started by SS in C:\EMS\backend)
+2026-08-11 18:13:09 INFO  [main] c.y.e.EmployeeManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-11 18:13:09 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-11 18:13:09 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2026-08-11 18:13:10 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-11 18:13:10 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-08-11 18:13:10 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-11 18:13:10 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-08-11 18:13:10 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-08-11 18:13:10 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 786 ms
+2026-08-11 18:13:10 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-11 18:13:10 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-08-11 18:13:10 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-11 18:13:10 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-11 18:13:10 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-11 18:13:10 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3006bfb
+2026-08-11 18:13:10 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-11 18:13:10 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.11
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-11 18:13:10 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-11 18:13:11 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-11 18:13:11 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-11 18:13:11 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-08-11 18:13:11 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-08-11 18:13:11 INFO  [main] c.y.e.EmployeeManagementSystemApplication - Started EmployeeManagementSystemApplication in 2.858 seconds (process running for 3.056)
+2026-08-11 18:13:30 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-11 18:13:30 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-11 18:13:30 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-08-11 18:13:30 INFO  [http-nio-8080-exec-1] c.y.e.s.impl.EmployeeServiceImpl - Fetching employee with ID: 300
+2026-08-11 18:13:31 INFO  [http-nio-8080-exec-1] c.y.e.s.impl.EmployeeServiceImpl - Successfully fetched employee with ID: 300
+2026-08-11 19:00:11 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-11 19:00:11 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-08-11 19:00:11 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-11 19:00:11 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-11 19:00:11 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-18 17:59:12 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-08-18 17:59:13 INFO  [main] c.y.e.EmployeeManagementSystemApplication - Starting EmployeeManagementSystemApplication using Java 21.0.11 with PID 35496 (C:\EMS\backend\target\classes started by SS in C:\EMS\backend)
+2026-08-18 17:59:13 INFO  [main] c.y.e.EmployeeManagementSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-18 17:59:13 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-18 17:59:13 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2026-08-18 17:59:14 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-18 17:59:14 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-08-18 17:59:14 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-18 17:59:14 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-08-18 17:59:14 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-08-18 17:59:14 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1061 ms
+2026-08-18 17:59:14 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-18 17:59:14 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-08-18 17:59:14 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-18 17:59:14 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-18 17:59:14 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-18 17:59:14 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5402612e
+2026-08-18 17:59:14 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-18 17:59:14 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.11
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-18 17:59:15 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-18 17:59:15 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-18 17:59:15 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-18 17:59:16 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-08-18 17:59:16 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-08-18 17:59:16 INFO  [main] c.y.e.EmployeeManagementSystemApplication - Started EmployeeManagementSystemApplication in 4.025 seconds (process running for 4.292)
+2026-08-18 18:00:42 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-18 18:00:42 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-18 18:00:42 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-08-18 18:00:43 INFO  [http-nio-8080-exec-9] o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 364 ms
+2026-08-20 15:57:10 INFO  [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-20 15:57:10 INFO  [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-08-20 15:57:10 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20 15:57:10 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-20 15:57:10 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-20 16:08:01 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-08-20 16:08:01 INFO  [main] c.y.e.c.EmployeeControllerTest - Starting EmployeeControllerTest using Java 21.0.11 with PID 31840 (started by SS in C:\EMS\backend)
+2026-08-20 16:08:01 INFO  [main] c.y.e.c.EmployeeControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-08-20 16:08:02 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-08-20 16:08:02 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-08-20 16:08:02 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-08-20 16:08:02 INFO  [main] c.y.e.c.EmployeeControllerTest - Started EmployeeControllerTest in 1.899 seconds (process running for 2.801)
+2026-08-20 16:10:15 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-08-20 16:10:15 INFO  [main] c.y.e.c.EmployeeControllerTest - Starting EmployeeControllerTest using Java 21.0.11 with PID 35012 (started by SS in C:\EMS\backend)
+2026-08-20 16:10:15 INFO  [main] c.y.e.c.EmployeeControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-08-20 16:10:17 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-08-20 16:10:17 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-08-20 16:10:17 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-08-20 16:10:17 INFO  [main] c.y.e.c.EmployeeControllerTest - Started EmployeeControllerTest in 1.633 seconds (process running for 2.358)
+2026-08-20 16:17:26 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-08-20 16:17:26 INFO  [main] c.y.e.c.EmployeeControllerTest - Starting EmployeeControllerTest using Java 21.0.11 with PID 28424 (started by SS in C:\EMS\backend)
+2026-08-20 16:17:26 INFO  [main] c.y.e.c.EmployeeControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-08-20 16:17:27 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-08-20 16:17:27 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-08-20 16:17:27 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-08-20 16:17:27 INFO  [main] c.y.e.c.EmployeeControllerTest - Started EmployeeControllerTest in 1.806 seconds (process running for 2.712)
+2026-08-20 16:51:30 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-08-20 16:51:30 INFO  [main] c.y.e.c.EmployeeControllerTest - Starting EmployeeControllerTest using Java 21.0.11 with PID 5052 (started by SS in C:\EMS\backend)
+2026-08-20 16:51:30 INFO  [main] c.y.e.c.EmployeeControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-08-20 16:51:31 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-08-20 16:51:31 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-08-20 16:51:31 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-08-20 16:51:31 INFO  [main] c.y.e.c.EmployeeControllerTest - Started EmployeeControllerTest in 1.873 seconds (process running for 2.925)
+2026-08-20 16:54:18 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-08-20 16:54:18 INFO  [main] c.y.e.c.EmployeeControllerTest - Starting EmployeeControllerTest using Java 21.0.11 with PID 20516 (started by SS in C:\EMS\backend)
+2026-08-20 16:54:18 INFO  [main] c.y.e.c.EmployeeControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-08-20 16:54:20 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-08-20 16:54:20 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-08-20 16:54:20 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-08-20 16:54:20 INFO  [main] c.y.e.c.EmployeeControllerTest - Started EmployeeControllerTest in 1.89 seconds (process running for 3.043)
+2026-08-20 16:54:20 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Deleting employee with ID: 999
+2026-08-20 16:54:20 WARN  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee not found with ID: 999
+2026-08-20 16:54:20 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Searching employees with keyword: Yash and designation: Spring Boot Developer
+2026-08-20 16:54:20 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Found 1 employees matching search criteria
+2026-08-20 16:54:20 WARN  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee not found with ID: 999
+2026-08-20 16:54:20 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Creating employee with email: yash@gmail.com
+2026-08-20 16:54:20 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee created successfully with ID: 1
+2026-08-20 16:54:20 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Updating employee with ID: 1
+2026-08-20 16:54:20 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee updated successfully with ID: null
+2026-08-20 16:54:20 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Fetching employee with ID: 999
+2026-08-20 16:54:20 WARN  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee not found with ID: 999
+2026-08-20 16:54:20 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Deleting employee with ID: 1
+2026-08-20 16:54:20 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee deleted successfully with ID: null
+2026-08-20 16:54:20 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yash.ems.EmployeeManagementSystemApplicationTests]: EmployeeManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-20 16:54:20 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yash.ems.EmployeeManagementSystemApplication for test class com.yash.ems.EmployeeManagementSystemApplicationTests
+2026-08-20 16:54:20 INFO  [main] c.y.e.EmployeeManagementSystemApplicationTests - Starting EmployeeManagementSystemApplicationTests using Java 21.0.11 with PID 20516 (started by SS in C:\EMS\backend)
+2026-08-20 16:54:20 INFO  [main] c.y.e.EmployeeManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-08-20 16:54:21 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-20 16:54:21 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2026-08-20 16:54:21 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-20 16:54:21 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-08-20 16:54:21 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-20 16:54:21 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-20 16:54:21 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-20 16:54:21 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a1c308b
+2026-08-20 16:54:21 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-20 16:54:21 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.11
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-20 16:54:22 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-20 16:54:22 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20 16:54:22 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-20 16:54:23 INFO  [main] c.y.e.EmployeeManagementSystemApplicationTests - Started EmployeeManagementSystemApplicationTests in 2.725 seconds (process running for 6.287)
+2026-08-20 16:54:23 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20 16:54:23 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-20 16:54:23 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-20 16:54:41 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-08-20 16:54:41 INFO  [main] c.y.e.c.EmployeeControllerTest - Starting EmployeeControllerTest using Java 21.0.11 with PID 28040 (started by SS in C:\EMS\backend)
+2026-08-20 16:54:41 INFO  [main] c.y.e.c.EmployeeControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-08-20 16:54:42 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-08-20 16:54:42 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-08-20 16:54:42 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-08-20 16:54:42 INFO  [main] c.y.e.c.EmployeeControllerTest - Started EmployeeControllerTest in 1.505 seconds (process running for 2.242)
+2026-08-20 16:58:35 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-08-20 16:58:35 INFO  [main] c.y.e.c.EmployeeControllerTest - Starting EmployeeControllerTest using Java 21.0.11 with PID 35008 (started by SS in C:\EMS\backend)
+2026-08-20 16:58:35 INFO  [main] c.y.e.c.EmployeeControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-08-20 16:58:36 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-08-20 16:58:36 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-08-20 16:58:36 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-08-20 16:58:36 INFO  [main] c.y.e.c.EmployeeControllerTest - Started EmployeeControllerTest in 1.537 seconds (process running for 2.257)
+2026-08-20 16:58:43 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-08-20 16:58:43 INFO  [main] c.y.e.c.EmployeeControllerTest - Starting EmployeeControllerTest using Java 21.0.11 with PID 14760 (started by SS in C:\EMS\backend)
+2026-08-20 16:58:43 INFO  [main] c.y.e.c.EmployeeControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-08-20 16:58:44 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-08-20 16:58:44 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-08-20 16:58:44 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-08-20 16:58:44 INFO  [main] c.y.e.c.EmployeeControllerTest - Started EmployeeControllerTest in 1.617 seconds (process running for 2.404)
+2026-08-20 16:58:45 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Deleting employee with ID: 999
+2026-08-20 16:58:45 WARN  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee not found with ID: 999
+2026-08-20 16:58:45 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Searching employees with keyword: Yash and designation: Spring Boot Developer
+2026-08-20 16:58:45 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Found 1 employees matching search criteria
+2026-08-20 16:58:45 WARN  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee not found with ID: 999
+2026-08-20 16:58:45 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Creating employee with email: yash@gmail.com
+2026-08-20 16:58:45 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee created successfully with ID: 1
+2026-08-20 16:58:45 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Updating employee with ID: 1
+2026-08-20 16:58:45 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee updated successfully with ID: null
+2026-08-20 16:58:45 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Fetching employee with ID: 999
+2026-08-20 16:58:45 WARN  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee not found with ID: 999
+2026-08-20 16:58:45 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Deleting employee with ID: 1
+2026-08-20 16:58:45 INFO  [main] c.y.e.s.impl.EmployeeServiceImpl - Employee deleted successfully with ID: null
+2026-08-20 16:58:45 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yash.ems.EmployeeManagementSystemApplicationTests]: EmployeeManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-20 16:58:45 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yash.ems.EmployeeManagementSystemApplication for test class com.yash.ems.EmployeeManagementSystemApplicationTests
+2026-08-20 16:58:45 INFO  [main] c.y.e.EmployeeManagementSystemApplicationTests - Starting EmployeeManagementSystemApplicationTests using Java 21.0.11 with PID 14760 (started by SS in C:\EMS\backend)
+2026-08-20 16:58:45 INFO  [main] c.y.e.EmployeeManagementSystemApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-08-20 16:58:45 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-20 16:58:45 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
+2026-08-20 16:58:45 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-20 16:58:45 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-08-20 16:58:45 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-20 16:58:46 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-20 16:58:46 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-20 16:58:46 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7136ad9a
+2026-08-20 16:58:46 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-20 16:58:46 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.11
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-20 16:58:46 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-20 16:58:46 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20 16:58:46 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-20 16:58:47 INFO  [main] c.y.e.EmployeeManagementSystemApplicationTests - Started EmployeeManagementSystemApplicationTests in 2.289 seconds (process running for 5.176)
+2026-08-20 16:58:47 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20 16:58:47 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-20 16:58:47 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

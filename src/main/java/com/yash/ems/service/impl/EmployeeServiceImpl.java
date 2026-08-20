@@ -23,9 +23,15 @@ import org.springframework.data.domain.Sort;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Service
 @RequiredArgsConstructor
 public class EmployeeServiceImpl implements EmployeeService {
+
+    private static final Logger logger =
+            LoggerFactory.getLogger(EmployeeServiceImpl.class);
 
     private final EmployeeRepository employeeRepository;
 
@@ -39,7 +45,11 @@ public class EmployeeServiceImpl implements EmployeeService {
         employee.setCreatedAt(LocalDateTime.now());
         employee.setUpdatedAt(LocalDateTime.now());
 
+        logger.info("Creating employee with email: {}", request.getEmail());
+
         Employee savedEmployee = employeeRepository.save(employee);
+
+        logger.info("Employee created successfully with ID: {}", savedEmployee.getId());
 
         return employeeMapper.toResponse(savedEmployee);
     }
@@ -106,8 +116,20 @@ public PageResponse<EmployeeResponse> getAllEmployees(
     @Override
     public EmployeeResponse getEmployeeById(Long id) {
 
+        logger.info("Fetching employee with ID: {}", id);
+
         Employee employee = employeeRepository.findById(id)
-                .orElseThrow(() -> new EmployeeNotFoundException(id));
+                .orElseThrow(() -> {
+
+                    logger.warn("Employee not found with ID: {}", id);
+
+                    return new EmployeeNotFoundException(id);
+                });
+
+        logger.info(
+                "Successfully fetched employee with ID: {}",
+                employee.getId()
+        );
 
         return employeeMapper.toResponse(employee);
     }
@@ -116,11 +138,20 @@ public PageResponse<EmployeeResponse> getAllEmployees(
     public EmployeeResponse updateEmployee(Long id, UpdateEmployeeRequest request) {
 
         Employee employee = employeeRepository.findById(id)
-                .orElseThrow(() -> new EmployeeNotFoundException(id));
+                .orElseThrow(() ->{
+
+                    logger.warn("Employee not found with ID: {}", id);
+
+                    return new EmployeeNotFoundException(id);
+                });
+
+        logger.info("Updating employee with ID: {}", id);
 
         employeeMapper.updateEmployeeFromRequest(request, employee);
 
         Employee updatedEmployee = employeeRepository.save(employee);
+
+        logger.info("Employee updated successfully with ID: {}", updatedEmployee.getId());
 
         return employeeMapper.toResponse(updatedEmployee);
     }
@@ -129,10 +160,22 @@ public PageResponse<EmployeeResponse> getAllEmployees(
     @Override
     public void deleteEmployee(Long id) {
 
+        logger.info("Deleting employee with ID: {}", id);
+
         Employee employee = employeeRepository.findById(id)
-                .orElseThrow(() -> new EmployeeNotFoundException(id));
+                .orElseThrow(() ->{
+
+            logger.warn("Employee not found with ID: {}", id);
+
+            return new EmployeeNotFoundException(id);
+        });
 
         employeeRepository.delete(employee);
+
+        logger.info(
+                "Employee deleted successfully with ID: {}",
+                employee.getId()
+        );
     }
 
     @Override
@@ -140,12 +183,23 @@ public PageResponse<EmployeeResponse> getAllEmployees(
             String keyword,
             String designation) {
 
+        logger.info(
+                "Searching employees with keyword: {} and designation: {}",
+                keyword,
+                designation
+        );
+
         Specification<Employee> specification =
                 Specification.where(EmployeeSpecification.hasKeyword(keyword))
                         .and(EmployeeSpecification.hasDesignation(designation));
 
         List<Employee> employees =
                 employeeRepository.findAll(specification);
+
+        logger.info(
+                "Found {} employees matching search criteria",
+                employees.size()
+        );
 
         return employees.stream()
                 .map(employeeMapper::toResponse)
