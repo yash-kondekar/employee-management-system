@@ -296,7 +296,14 @@ class EmployeeIntegrationTest {
         mockMvc.perform(
                         get("/api/v1/employees/{id}", employeeId)
                 )
-                .andExpect(status().isNotFound());
+                .andExpect(status().isNotFound())
+                .andExpect(jsonPath("$.status").value(404))
+                .andExpect(jsonPath("$.error").value("Not Found"))
+                .andExpect(jsonPath("$.message")
+                        .value("Employee not found with id: " + employeeId))
+                .andExpect(jsonPath("$.path")
+                        .value("/api/v1/employees/" + employeeId))
+                .andExpect(jsonPath("$.timestamp").exists());
     }
 
     @Test
@@ -342,8 +349,8 @@ class EmployeeIntegrationTest {
         // Arrange
         CreateEmployeeRequest request = new CreateEmployeeRequest();
 
-        request.setFirstName("");
-        request.setLastName("");
+        request.setFirstName("A");
+        request.setLastName("B");
         request.setEmail("invalid-email");
         request.setPhoneNumber("123");
         request.setDesignation("");
@@ -355,7 +362,25 @@ class EmployeeIntegrationTest {
                                 .contentType(APPLICATION_JSON)
                                 .content(objectMapper.writeValueAsString(request))
                 )
-                .andExpect(status().isBadRequest());
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.status").value(400))
+                .andExpect(jsonPath("$.error").value("Bad Request"))
+                .andExpect(jsonPath("$.message").value("Validation Failed"))
+                .andExpect(jsonPath("$.path").value("/api/v1/employees"))
+                .andExpect(jsonPath("$.timestamp").exists())
+                .andExpect(jsonPath("$.validationErrors").exists())
+                .andExpect(jsonPath("$.validationErrors.firstName")
+                        .value("First name must be between 2 and 50 characters"))
+                .andExpect(jsonPath("$.validationErrors.lastName")
+                        .value("Last name must be between 2 and 50 characters"))
+                .andExpect(jsonPath("$.validationErrors.email")
+                        .value("Invalid email format"))
+                .andExpect(jsonPath("$.validationErrors.phoneNumber")
+                        .value("Phone number must be a valid 10-digit Indian mobile number"))
+                .andExpect(jsonPath("$.validationErrors.designation")
+                        .value("Designation is required"))
+                .andExpect(jsonPath("$.validationErrors.salary")
+                        .value("Salary must be greater than zero"));
     }
 
     @Test
