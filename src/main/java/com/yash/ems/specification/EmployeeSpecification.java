@@ -8,7 +8,7 @@ public class EmployeeSpecification {
     public static Specification<Employee> hasKeyword(String keyword) {
 
         if (keyword == null || keyword.isBlank()) {
-            return null;
+            return (root, query, criteriaBuilder) -> null;
         }
 
         return (root, query, criteriaBuilder) ->
@@ -21,7 +21,7 @@ public class EmployeeSpecification {
     public static Specification<Employee> hasDesignation(String designation) {
 
         if (designation == null || designation.isBlank()) {
-            return null;
+            return (root, query, criteriaBuilder) -> null;
         }
 
         return (root, query, criteriaBuilder) ->

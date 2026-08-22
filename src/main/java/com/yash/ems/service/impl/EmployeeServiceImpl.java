@@ -190,7 +190,7 @@ public PageResponse<EmployeeResponse> getAllEmployees(
         );
 
         Specification<Employee> specification =
-                Specification.where(EmployeeSpecification.hasKeyword(keyword))
+                EmployeeSpecification.hasKeyword(keyword)
                         .and(EmployeeSpecification.hasDesignation(designation));
 
         List<Employee> employees =
